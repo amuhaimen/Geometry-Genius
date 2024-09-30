@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geometry Gem</title>
+  </head>
+  <body class="max-w-[1820px] mx-auto">
+    <header>
+      <div
+        class="flex flex-col md:flex-row lg:flex-row justify-between items-center py-5 px-10 bg-[#3a9dd75a] rounded-lg mt-12"
+      >
+        <div>
+          <h1 class="text-[#111111] text-5xl font-bold">Interactive</h1>
+          <p class="text-3xl font-medium text-gray-500 mt-2">Geometry Genius</p>
+        </div>
+        <button class="btn bg-[#1090D8] text-white border-none">Blog</button>
+      </div>
+    </header>
+    <main>
+      <!-- main content container -->
+      <div class="flex flex-col md:flex-row mt-12 gap-x-6 p-5">
+        <!--shape cards container -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-1 gap-6"
+        >
+          <!-- triangle card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img src="images/triangle.png" alt="Triangle" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-[#414141] text-2xl font-bold">Triangle</h2>
+              <p>Area(A) = 0.5 X b X h</p>
+              <div class="mt-5">
+                <input
+                  type="text"
+                  class="text-[#414141] w-24 bg-[#F1F1F1] p-2 mr-2"
+                  placeholder="b"
+                />
+                <span class="mr-3">cm</span>
+                <input
+                  type="text"
+                  class="text-[#414141] w-24 bg-[#F1F1F1] p-2 mr-2"
+                  placeholder="h"
+                />
+                <span class="mr-3">cm</span>
+              </div>
+
+              <div class="card-actions justify-end">
+                <button
+                  class="btn bg-[#1090D8] text-white w-full mt-12"
+                  id="triangle_btn"
+                  onclick="triangleCalculation()"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Rectangle card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Parallelogram card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Rhombus card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Pentagon card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Ellipse card -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Area calculation container -->
+        <div class="w-96 border-2 border-gray-200 rounded-lg pt-8">
+          <h3
+            class="text-center text-[rgba(17, 17, 17, 0.80)] text-xl underline"
+          >
+            Area Calculation
+          </h3>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/triangle.js"></script>
+  </body>
+</html>
