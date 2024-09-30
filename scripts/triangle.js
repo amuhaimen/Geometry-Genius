@@ -11,10 +11,13 @@ function triangleCalculation() {
   const baseField = document.getElementById("triangle_base");
   const baseText = baseField.value;
   const baseValue = parseFloat(baseText);
-  console.log(baseValue);
 
   const heightField = document.getElementById("triangle_height");
   const heightText = heightField.value;
   const heightValue = parseFloat(heightText);
-  console.log(heightValue);
+
+  //   area
+  const area = 0.5 * baseValue * heightValue;
+  const triangleArea = document.getElementById("triangle_area");
+  triangleArea.innerText = area;
 }
