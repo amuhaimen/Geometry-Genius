@@ -171,7 +171,7 @@
                   type="text"
                   class="text-[#414141] w-24 bg-[#F1F1F1] p-2 mr-2"
                   placeholder="d1"
-                  id=""
+                  id="diagonals_one"
                 />
                 <span class="mr-3">cm</span>
                 <!-- Rhombus d2 -->
@@ -179,20 +179,20 @@
                   type="text"
                   class="text-[#414141] w-24 bg-[#F1F1F1] p-2 mr-2"
                   placeholder="d2"
-                  id=""
+                  id="diagonals_two"
                 />
                 <span class="mr-3">cm</span>
               </div>
               <div>
                 <p class="text-2xl font-normal mt-3">
-                  Area: <span id="Rhombus_area"></span>cm<sup>2</sup>
+                  Area: <span id="rhombus_area"></span>cm<sup>2</sup>
                 </p>
               </div>
               <div class="card-actions">
                 <button
                   class="btn bg-[#1090D8] text-white w-full mt-12"
-                  id="triangle_btn"
-                  onclick=""
+                  id="rhombus_btn"
+                  onclick="calculateRhombusArea()"
                 >
                   Calculate
                 </button>
@@ -208,12 +208,12 @@
               <h2 class="text-[#414141] text-2xl font-bold">Pentagon</h2>
               <p class="text-lg font-normal">Area (A) = 0.5 X p X b</p>
               <div class="mt-5">
-                <!-- Pentagon p -->
+                <!-- Pentagon perimeter -->
                 <input
                   type="text"
                   class="text-[#414141] w-24 bg-[#F1F1F1] p-2 mr-2"
                   placeholder="p"
-                  id=""
+                  id="pentagon_perimeter"
                 />
                 <span class="mr-3">cm</span>
                 <!-- Pentagon base -->
@@ -221,20 +221,20 @@
                   type="text"
                   class="text-[#414141] w-24 bg-[#F1F1F1] p-2 mr-2"
                   placeholder="b"
-                  id=""
+                  id="pentagon_base"
                 />
                 <span class="mr-3">cm</span>
               </div>
               <div>
                 <p class="text-2xl font-normal mt-3">
-                  Area: <span id="Rhombus_area"></span>cm<sup>2</sup>
+                  Area: <span id="pentagon_area"></span>cm<sup>2</sup>
                 </p>
               </div>
               <div class="card-actions">
                 <button
                   class="btn bg-[#1090D8] text-white w-full mt-12"
                   id="triangle_btn"
-                  onclick=""
+                  onclick="calculatePentagonArea()"
                 >
                   Calculate
                 </button>
@@ -244,7 +244,7 @@
           <!-- Ellipse card -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="images/ellipse.png" alt="Triangle" />
+              <img src="images/ellipse.png" alt="ellipse" />
             </figure>
             <div class="card-body text-center">
               <h2 class="text-[#414141] text-2xl font-bold">Ellipse</h2>
@@ -255,7 +255,7 @@
                   type="text"
                   class="text-[#414141] w-24 bg-[#F1F1F1] p-2 mr-2"
                   placeholder="a"
-                  id=""
+                  id="semi_major_axis"
                 />
                 <span class="mr-3">cm</span>
                 <!-- Ellipse b -->
@@ -263,7 +263,7 @@
                   type="text"
                   class="text-[#414141] w-24 bg-[#F1F1F1] p-2 mr-2"
                   placeholder="b"
-                  id=""
+                  id="semi_minor_axis"
                 />
                 <span class="mr-3">cm</span>
               </div>
@@ -276,7 +276,7 @@
                 <button
                   class="btn bg-[#1090D8] text-white w-full mt-12"
                   id="ellipse_btn"
-                  onclick=""
+                  onclick="calculateEllipseArea()"
                 >
                   Calculate
                 </button>
@@ -294,8 +294,11 @@
         </div>
       </div>
     </main>
-    <script src="scripts/triangle.js"></script>
+    <script src="scripts/triangle-areaa.js"></script>
     <script src="scripts/rectangle-area.js"></script>
-    <script src="scripts/parallelogram.js"></script>
+    <script src="scripts/parallelogram-area.js"></script>
+    <script src="scripts/rhombus-area.js"></script>
+    <script src="scripts/pentagon-area.js"></script>
+    <script src="scripts/elipse_area.js"></script>
   </body>
 </html>
