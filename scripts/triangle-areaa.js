@@ -8,16 +8,19 @@
  */
 
 function triangleCalculation() {
-  const baseField = document.getElementById("triangle_base");
-  const baseText = baseField.value;
-  const baseValue = parseFloat(baseText);
+  const triangleBase = getInputValueById("triangle_base");
+  const triangleHeight = getInputValueById("triangle_height");
+  const area = 0.5 * triangleBase * triangleHeight;
 
-  const heightField = document.getElementById("triangle_height");
-  const heightText = heightField.value;
-  const heightValue = parseFloat(heightText);
-
-  //   area
-  const area = 0.5 * baseValue * heightValue;
-  const triangleArea = document.getElementById("triangle_area");
-  triangleArea.innerText = area;
+  setInnerTextById("triangle_area", area);
 }
+
+const triangle = document.getElementById("triangle");
+triangle.addEventListener("mouseenter", function () {
+  triangle.style.backgroundColor = "#FBBCED";
+  triangle.style.transition = "background-color 0.5s";
+});
+triangle.addEventListener("mouseleave", function () {
+  triangle.style.backgroundColor = "transparent";
+  triangle.style.transition = "background-color 0.5s";
+});

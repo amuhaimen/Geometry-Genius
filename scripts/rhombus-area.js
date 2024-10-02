@@ -7,14 +7,12 @@ function calculateRhombusArea() {
   //   console.log("clicked");
 }
 
-function getInputValueById(inputFieldId) {
-  const inputField = document.getElementById(inputFieldId);
-  const inputText = inputField.value;
-  const inputValue = parseFloat(inputText);
-  return inputValue;
-}
-
-function setInnerTextById(elementId, area) {
-  const element = document.getElementById(elementId);
-  element.innerText = area;
-}
+const rhombus = document.getElementById("rhombus");
+rhombus.addEventListener("mouseenter", function () {
+  rhombus.style.backgroundColor = "#69C7F0";
+  rhombus.style.transition = "background-color 0.5s";
+});
+rhombus.addEventListener("mouseleave", function () {
+  rhombus.style.backgroundColor = "transparent";
+  rhombus.style.transition = "background-color 0.5s";
+});
